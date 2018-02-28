@@ -11,3 +11,14 @@
   font-size: 15px;
   p{line-height: 20px; }
 }
+
+.varios-elementos{
+  background: #ccc;
+p{color: red}
+a{color: pink}
+input{
+  border-radius: 20px;
+  border-left: solid 1px #eeaeab;
+  border-right: solid 1px #ddd;
+  }
+}

@@ -4,3 +4,31 @@
   padding: 10px;
   color: #333;
 }
+
+.content {
+  background: #000;
+  font-family: Arial;
+  font-size: 15px;
+}
+
+.content p {
+  line-height: 20px;
+}
+
+.varios-elementos {
+  background: #ccc;
+}
+
+.varios-elementos p {
+  color: red;
+}
+
+.varios-elementos a {
+  color: pink;
+}
+
+.varios-elementos input {
+  border-radius: 20px;
+  border-left: solid 1px #eeaeab;
+  border-right: solid 1px #ddd;
+}
