@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .teste {
   border: 1px solid red;
   margin: 0 auto;
@@ -60,4 +65,15 @@
 .varios-elementos #navbar li {
   float: left;
   width: 150px;
+}
+
+.varios-elementos li {
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.varios-elementos h5 {
+  font-size: 2.8125em;
 }

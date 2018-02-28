@@ -1,3 +1,5 @@
+@import "reset";
+
 .teste{
   border: 1px solid red;
   margin: 0 auto;
@@ -54,4 +56,21 @@ input{
       width: $navbar-width/$items - 10px;
     }
   }
+
+  @mixin trans($transition){
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+  }
+
+  li{
+    @include trans(all .5s ease-in);
+  }
+
+  @function pxem($px, $context:16px){
+    @return($px/ $context) * 1em;
+  }
+
+  h5{font-size:pxem(45px);}
 }
