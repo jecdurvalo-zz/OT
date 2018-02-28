@@ -20,10 +20,10 @@ var sassProdOptions = {
 };
 
 // Testando a função
-gulp.task('default', function() {
-  console.log('Oi sumido');
+// gulp.task('default', function() {
+  //console.log('Oi sumido');
 
-});
+//});
 
 // TASK 'sassdev': para executá-lo - gulp sass dev
 gulp.task('sassdev', function() {
@@ -46,3 +46,6 @@ gulp.task('sassprod', function() {
 gulp.task('watch', function() {
   gulp.watch(scssFiles['sassdev', 'sassprod']);
 })
+
+// Executar tudo sozinho
+gulp.task('default', ['sassdev', 'sassprod', 'watch']);

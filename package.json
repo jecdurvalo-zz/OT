@@ -6,16 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jobinhaa/Aula1OAP.git"
-  },
   "author": "Joana Durvalo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jobinhaa/Aula1OAP/issues"
   },
-  "homepage": "https://github.com/jobinhaa/Aula1OAP#readme",
   "dependencies": {
     "gulp-file": "^0.4.0"
   },
