@@ -21,4 +21,37 @@ input{
   border-left: solid 1px #eeaeab;
   border-right: solid 1px #ddd;
   }
+
+  $main-color: #d5d5d5;
+  .botao{
+    background: $main-color;
+  }
+
+  a{
+    color: #ce4dd6;
+    &:hover{color: #ffb3ff;}
+    &:visited{color:#c458cb;}
+  }
+
+  %qualquer-coisa{
+    font-size: 10px;
+  }
+
+  body{
+    @extend %qualquer-coisa;
+  }
+
+  .classe{
+    @extend %qualquer-coisa;
+  }
+
+  #navbar{
+    $navbar-width: 800px;
+    $items: 5;
+    width: $navbar-width;
+    li{
+      float: left;
+      width: $navbar-width/$items - 10px;
+    }
+  }
 }

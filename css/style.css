@@ -32,3 +32,32 @@
   border-left: solid 1px #eeaeab;
   border-right: solid 1px #ddd;
 }
+
+.varios-elementos .botao {
+  background: #d5d5d5;
+}
+
+.varios-elementos a {
+  color: #ce4dd6;
+}
+
+.varios-elementos a:hover {
+  color: #ffb3ff;
+}
+
+.varios-elementos a:visited {
+  color: #c458cb;
+}
+
+.varios-elementos body, .varios-elementos .classe {
+  font-size: 10px;
+}
+
+.varios-elementos #navbar {
+  width: 800px;
+}
+
+.varios-elementos #navbar li {
+  float: left;
+  width: 150px;
+}
