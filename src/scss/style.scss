@@ -1,76 +1,219 @@
-@import "reset";
+$largura: 960px;
+$bordaAzul: #16c6ef;
+$fundo: #fff;
+$altura-menu: 192px;
+$corAmarelo: #fed721;
 
-.teste{
-  border: 1px solid red;
+@import 'reset';
+
+@mixin trans($transition){
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+body{
+  background-color: #ffe002;
+  font: {
+    family: 'Arial', Verdana, Tahoma;
+    size: 16px;
+  }
+}
+.container{
+  width: $largura;
   margin: 0 auto;
-  padding: 10px;
-  color: #333;
+  border: 1px solid $bordaAzul;
+  margin-top: 10px;
+  background-color: $fundo;
 }
 
-.content{
-  background: #000;
-  font-family: Arial;
-  font-size: 15px;
-  p{line-height: 20px; }
+figure{
+  position: relative;
+  img{
+    width: 100%;
+    max-width: $largura;
+    height: 400px;
+  }
+  figcaption{
+    background: rgba(11, 127, 197, 0.33);
+    color: #fff;
+    font-size: 48px;
+    display: inline;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    line-height: 1.20em;
+    border: 2px solid $bordaAzul;
+    border-radius: 5px;
+  }
 }
 
-.varios-elementos{
-  background: #ccc;
-p{color: red}
-a{color: pink}
-input{
-  border-radius: 20px;
-  border-left: solid 1px #eeaeab;
-  border-right: solid 1px #ddd;
-  }
+header{
+  nav{
+    margin-top: 3px;
+    ul{
+      li{
+        width: $altura-menu;
+        display: block;
+        float: left;
+        background: $bordaAzul;
+        text-align: center;
+        line-height: 2.5em;
+        border-bottom: 4px solid #066aa5;
 
-  $main-color: #d5d5d5;
-  .botao{
-    background: $main-color;
-  }
+        a{
+          color: #fff;
+          text-decoration: none;
+          display: block;
+          @include trans(all .5s ease-in);
 
-  a{
-    color: #ce4dd6;
-    &:hover{color: #ffb3ff;}
-    &:visited{color:#c458cb;}
-  }
-
-  %qualquer-coisa{
-    font-size: 10px;
-  }
-
-  body{
-    @extend %qualquer-coisa;
-  }
-
-  .classe{
-    @extend %qualquer-coisa;
-  }
-
-  #navbar{
-    $navbar-width: 800px;
-    $items: 5;
-    width: $navbar-width;
-    li{
-      float: left;
-      width: $navbar-width/$items - 10px;
+          &:hover{
+            border-color: #666;
+            background-color: $corAmarelo;
+            color: red;
+          }
+        }
+      }
     }
   }
+}
 
-  @mixin trans($transition){
-    -moz-transition: $transition;
-    -o-transition: $transition;
-    -webkit-transition: $transition;
-    transition: $transition;
+main{
+  margin-bottom: 30px;
+  display: inline-block;
+
+  article{
+    background: #fcd51e;
+    width: 699px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+
+    h1{
+      text-transform: uppercase;
+      font:{
+        family: 'Arial';
+        size: 40px;
+        weight: bold;
+      }
+    }
+    h2{
+      font-size: 24px;
+      padding-bottom: 15px;
+
+      span{
+        color: $corAmarelo;
+        background: $bordaAzul;
+        font-style: italic;
+      }
+    }
+    h3{
+      text-decoration: underline;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+    section{
+      position: relative;
+      margin: 15px;
+      float: left;
+
+      div p{
+        text-align: center;
+        top: 90px;
+        left: 0;
+        padding: 5px;
+        position: relative;
+        width: 70px;
+        margin-left: 10px;
+        background: $fundo;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+
+      .persona{
+        width: 100px;
+        height: 100px;
+        border: 1px solid $bordaAzul;
+        display: inline-block;
+      }
+
+      %caixa-foto{
+        background-size: cover;
+        margin: 10px;
+      }
+
+      .homer{
+        background-image: url(../img/homer.jpg);
+        @extend  %caixa-foto;
+      }
+
+      .mag{
+        background-image: url(../img/Mag.jpg);
+        @extend  %caixa-foto;
+      }
+
+      .bart{
+        background-image: url(../img/Bart.jpg);
+        @extend  %caixa-foto;
+      }
+
+      .lisa{
+        background-image: url(../img/Lisa.jpg);
+        @extend  %caixa-foto;
+      }
+
+      .marj{
+        background-image: url(../img/Marj.jpg);
+        @extend  %caixa-foto;
+      }
+    }
   }
+  aside{
+    background: green;
+    float: right;
+    width: 199px;
+    padding: 10px;
+    color: #fff;
 
-  li{
-    @include trans(all .5s ease-in);
+    section{
+      h3{
+        padding: 10px;
+      }
+    }
+    ul{
+      li{
+        list-style: none;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 5px;
+
+        a{
+          color: $fundo;
+          text-decoration: none;
+          padding: 5px;
+          line-height: 20px;
+          @include trans(all .5s ease-in);
+
+          &:hover{
+            color: #666;
+            background-color: $bordaAzul;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
   }
+}
 
-  @function pxem($px, $context:16px){
-    @return($px/ $context) * 1em;
+footer{
+  clear: both;
+  background: blue;
+  p{
+    margin-left: 30px;
+    padding: 10px;
+    color: #fff;
   }
-
-  h5{font-size:pxem(45px);}
 }
