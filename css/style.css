@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
+/* Cores */
 body {
   background: url("../img/fundo.jpg") no-repeat;
   background-size: cover;
@@ -20,8 +21,8 @@ body {
 .homer {
   width: 256px;
   height: 220px;
-  margin-left: -35px;
-  margin-top: -30px;
+  margin-left: -33px;
+  margin-top: -35px;
   background: url("../img/homer_rosca.png");
 }
 
@@ -53,6 +54,7 @@ header p {
 .btnHomer {
   background-image: url("../img/homer.jpg");
   background-size: cover;
+  margin-left: 100px;
 }
 
 .btnMarge {
@@ -83,9 +85,15 @@ article {
 }
 
 article h1 {
-  color: #2d63d6;
+  color: #4273de;
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
+}
+
+span {
+  background: #ecb705;
+  padding: 1px;
+  font-weight: 500;
 }
 
 .fotoHomerRG {
@@ -98,17 +106,21 @@ article h1 {
 
 footer {
   background-color: #4273de;
-  padding: 10px;
-  font-family: 'Roboto', sans-serif;
   border-top: 5px solid #9d5b00;
   float: left;
   line-height: 25px;
 }
 
-.fotoFamilia {
-  background: url("../img/Familia_Simpsons.png");
+footer p {
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+.fotoFamilia{
+  background: url('../img/Familia_Simpsons.png');
   width: 90px;
   height: 120px;
-  display: inline;
   background-size: cover;
-}
+  float: right;
+} */
