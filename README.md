@@ -1,4 +1,4 @@
-# Optimization Tchnology
+# Optimization Technology
 FIAP 2TIN subject.
 
 ## Table of contents
