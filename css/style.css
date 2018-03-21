@@ -117,12 +117,12 @@ article img {
 
 .materia h1 {
   color: #4273DE;
-  font-family: "Roboto", sans-serif;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
   margin-top: 10px;
 }
 
 .materia p {
-  font-family: "Roboto", sans-serif;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
   line-height: 20px;
   padding: 10px;
   text-align: justify;
@@ -149,7 +149,7 @@ footer {
 }
 
 .dadosAluno p {
-  font-family: "Roboto", sans-serif;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
