@@ -1,0 +1,166 @@
+/*
+Regras:
+- Utilizar regras aninhadas em Sass;
+- Utilizar variáveis;
+- Utilizar pseudo-elementos; &
+- Importar reset via Sass;  @import
+- Estender  uma classe dentro de outra;  @extend
+
+Boa Sorte!
+*/
+
+@import 'reset.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$amarelo-padrao: #ECB705;
+$azul-padrao: #56B4E7;
+$azul-escuro: #4273DE;
+$branco-padrao:#fff; 
+$font-default: 'Roboto', sans-serif;
+
+.caixote{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+     background: url('../img/nuvem-topo.png');
+     width: 1000px;
+}
+
+.logo{
+    background: url('../img/Logo_The_Simpsons.png');
+    width:231px;
+    height:103px; 
+    float: left;
+    margin-left: 350px;
+}
+
+  .menuPersonagens{
+    width:  1000px;
+    height: 270px;
+    background: $azul-escuro;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: -4px;
+}
+
+.persona{
+    float: left;
+    height: 200px;
+    width: 175px;
+    margin: 12px 2px 0px 10px;
+    border: 5px solid $branco-padrao;
+}
+
+
+.fundoA{
+    background: $amarelo-padrao;
+}
+
+.fundoB{
+    background: $azul-padrao;   
+}
+
+.quadro{
+    float: left;
+    height: 200px;
+    width: 175px;
+}
+
+.homer{
+    background: url('../img/Homer_Simpson.png');
+}
+
+.marje{
+    background: url('../img/Marge_Simpson.png');
+}
+
+.lisa{
+    background: url('../img/Lisa_Simpson.png');
+}
+
+.bart{
+    background: url('../img/Bart_Simpson.png');
+}
+
+.mag{
+    background: url('../img/Maggie_Simpson.png');
+}
+
+
+button{
+    background: #9D5B00;
+    border: 2px solid $amarelo-padrao;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $branco-padrao;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+article{
+    background: $branco-padrao;
+    border-top: 10px solid $amarelo-padrao;
+}
+
+article img{
+    border: 3px solid $azul-padrao;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+}
+
+.materia{
+    width: 1000px;
+}
+
+.materia h1{
+    color: $azul-escuro;
+    font-family: $font-default;
+    margin-top: 10px;
+}
+
+.materia p{
+    font-family: $font-default;
+    line-height: 20px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+span{
+    background: $amarelo-padrao;
+    color: $branco-padrao;
+    padding: 2px;
+}
+
+footer{
+    background: $amarelo-padrao;
+    width: 1000px;
+    float: left;
+}
+
+.dadosAluno{
+   float: left;
+   padding: 10px;
+   width: 200px;
+   margin: 20px;
+}
+.dadosAluno p{
+    font-family: $font-default;
+    color: $branco-padrao;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.familia{
+    background: url('../img/familia_roape.png');
+    width: 190px;
+    height:133px;
+    float: left;
+    margin-left: 150px;
+}

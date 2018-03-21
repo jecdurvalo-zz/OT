@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*
+Regras:
+- Utilizar regras aninhadas em Sass;
+- Utilizar variáveis;
+- Utilizar pseudo-elementos; &
+- Importar reset via Sass;  @import
+- Estender  uma classe dentro de outra;  @extend
+
+Boa Sorte!
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.caixote {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: url("../img/nuvem-topo.png");
+  width: 1000px;
+}
+
+.logo {
+  background: url("../img/Logo_The_Simpsons.png");
+  width: 231px;
+  height: 103px;
+  float: left;
+  margin-left: 350px;
+}
+
+.menuPersonagens {
+  width: 1000px;
+  height: 270px;
+  background: #4273DE;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: -4px;
+}
+
+.persona {
+  float: left;
+  height: 200px;
+  width: 175px;
+  margin: 12px 2px 0px 10px;
+  border: 5px solid #fff;
+}
+
+.fundoA {
+  background: #ECB705;
+}
+
+.fundoB {
+  background: #56B4E7;
+}
+
+.quadro {
+  float: left;
+  height: 200px;
+  width: 175px;
+}
+
+.homer {
+  background: url("../img/Homer_Simpson.png");
+}
+
+.marje {
+  background: url("../img/Marge_Simpson.png");
+}
+
+.lisa {
+  background: url("../img/Lisa_Simpson.png");
+}
+
+.bart {
+  background: url("../img/Bart_Simpson.png");
+}
+
+.mag {
+  background: url("../img/Maggie_Simpson.png");
+}
+
+button {
+  background: #9D5B00;
+  border: 2px solid #ECB705;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  float: left;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+article {
+  background: #fff;
+  border-top: 10px solid #ECB705;
+}
+
+article img {
+  border: 3px solid #56B4E7;
+  border-radius: 10px;
+  float: left;
+  margin: 20px;
+}
+
+.materia {
+  width: 1000px;
+}
+
+.materia h1 {
+  color: #4273DE;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.materia p {
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+  padding: 10px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+span {
+  background: #ECB705;
+  color: #fff;
+  padding: 2px;
+}
+
+footer {
+  background: #ECB705;
+  width: 1000px;
+  float: left;
+}
+
+.dadosAluno {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  margin: 20px;
+}
+
+.dadosAluno p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.familia {
+  background: url("../img/familia_roape.png");
+  width: 190px;
+  height: 133px;
+  float: left;
+  margin-left: 150px;
+}
