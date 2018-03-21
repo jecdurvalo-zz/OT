@@ -105,11 +105,14 @@ article img {
   border: 3px solid #56B4E7;
   border-radius: 10px;
   float: left;
-  margin: 20px;
+  margin: 100px 20px 20px 20px;
+  width: 200px;
 }
 
 .materia {
-  width: 1000px;
+  width: 700px;
+  float: left;
+  margin: 20px;
 }
 
 .materia h1 {
