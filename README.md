@@ -10,3 +10,7 @@ FIAP 2TIN subject.
 > Aula 14/03
 - Exercício utilizando o Gulp/Sass como simulado para a NAC
 - Automatização na criação de arquivos css e minificado criado utilizando o .scss (Sass)
+
+> Aula 22/08
+- Introdução ao Vue.js
+- Criação de um todo list utilizando o vue.js e webpack.
