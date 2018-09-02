@@ -7,6 +7,7 @@ module.exports = function() {
   this.salvarProdutos = function(produto, connection, callback){
     connection.query('INSERT INTO produto SET ? ', produto, callback);
   }
+  
 
   return this;
 }
